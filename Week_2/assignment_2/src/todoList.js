@@ -1,8 +1,11 @@
-function TodoList({todos}){
-    const listItems = todos.map((item,index) => <li> key = index item </li>) 
-    return (
-        <>[{listItems}]</>
-    );
-}
+function TodoList({ todos }) {
+    return(
+    <ul>
+      {
+        todos.map((item, index) => <li key = {index} >{item.text}</li>)
+      }
+    </ul>
+    )
+  }
 
 export default TodoList
