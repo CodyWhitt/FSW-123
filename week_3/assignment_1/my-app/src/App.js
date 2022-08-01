@@ -22,7 +22,7 @@ export default function App() {
   return (
     <div>
       <h3>ToDo-List</h3>
-        <TodoList todos = {todos} completed = {completed} deleteItem = {deleteItem}/>
+        <TodoList todosItems = {todosItems} completed = {completed} deleteItem = {deleteItem}/>
     </div>
   );
 }
