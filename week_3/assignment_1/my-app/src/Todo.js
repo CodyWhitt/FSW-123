@@ -1,4 +1,4 @@
-export default function Item({ item, completed, deleteItem}) {
+export default function Todo({ item, completed, deleteItem}) {
     return (
         <li key = {item.id}>
             <input
@@ -7,7 +7,7 @@ export default function Item({ item, completed, deleteItem}) {
                 onChange={() => completed(item.id)}
             />
             <span style={{ textDecoration: item.completed ? "line-through" : "" }}>
-                {item.name}
+                {item.text}
             </span>
             <button onClick={() => deleteItem(item.id)}>X</button>
         </li>

@@ -9,7 +9,7 @@ export default function App() {
   const completed = id => {
     const tempItems = [...todosItems];
     const index = tempItems.findIndex(item => item.id === id);
-    tempItems[index].isComplete = !tempItems[index].isComplete
+    tempItems[index].completed = !tempItems[index].completed
     setTodos(tempItems)
   }
   
@@ -19,10 +19,12 @@ export default function App() {
     setTodos(newItems)
   }
 
+  console.log (todosItems)
+
   return (
     <div>
       <h3>ToDo-List</h3>
-        <TodoList todosItems = {todosItems} completed = {completed} deleteItem = {deleteItem}/>
+      <TodoList item = {todosItems} completed = {completed} deleteItem = {deleteItem}/>
     </div>
   );
 }

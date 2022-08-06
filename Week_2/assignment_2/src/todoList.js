@@ -1,11 +1,11 @@
 function TodoList({ todos }) {
-    return(
+  return(
     <ul>
       {
         todos.map((item, index) => <li key = {index} >{item.text}</li>)
       }
     </ul>
-    )
-  }
+  )
+}
 
 export default TodoList

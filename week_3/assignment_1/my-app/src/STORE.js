@@ -3,22 +3,22 @@ import {v4 as uuidv4} from "uuid";
 export const todos = [
     { 
       id: uuidv4(),
-      text: "goto gym",
+      text: " goto gym ",
       completed: false
     },
     { 
       id: uuidv4(),
-      text: "do laundry",
+      text: " do laundry ",
       completed: false
     },
     { 
       id: uuidv4(),
-      text: "food shopping",
+      text: " food shopping ",
       completed: false
     },
     { 
       id: uuidv4(),
-      text: "do homework",
+      text: " do homework ",
       completed: false
     }
 ];
