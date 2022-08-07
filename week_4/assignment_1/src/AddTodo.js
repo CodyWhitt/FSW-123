@@ -1,19 +1,20 @@
-import {useState} from "react";
-import {v4 as uuidv4} from "uuid";
-import ReactDOM from "react-dom";
+import {useState} from "react"; //use state middleware
+import {v4 as uuidv4} from "uuid"; //unique ID maker
 
-export default function NewItem({ item, createTodo }) {
-    const [userInput, setUserInput] = useState([""]);
+
+// create new item function
+export default function NewItem({createTodo }) {
+    const [userInput, setUserInput] = useState([""]); //sets user input state to empty
 
     const handleChange = event => {
-        setUserInput(event.target.value);
+        setUserInput(event.target.value); //renders after ever keystroke
     };
 
         const handleSubmit = event => {
             event.preventDefault();
             const newTodo = { id: uuidv4(), text: userInput, completed: false };
             createTodo(newTodo);
-            setUserInput("");
+            setUserInput(""); // submit event for creating a new item to add to array
     };
     
     return (
@@ -28,6 +29,6 @@ export default function NewItem({ item, createTodo }) {
                 placeholder="New Todo"
             />
             <button>Add Todo</button>
-        </form>
+        </form> //the part you see 
     );
 }

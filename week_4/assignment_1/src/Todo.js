@@ -11,5 +11,5 @@ export default function Todo({ item, completed, deleteItem}) {
             </span>
             <button onClick={() => deleteItem(item.id)}>X</button>
         </li>
-    )
+    ) // adds in visible delete button and is the back end function for line through if task already completed. 
 }
