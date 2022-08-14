@@ -1,1 +1,30 @@
 
+.searchBox {
+  border: 2px solid black;
+  background-color: lightgrey;
+  max-width: 50%;
+  padding: 10px;
+}
+
+.searchResults {
+  border: 2px solid black;
+  margin-top: 20px;
+  background-color: lightgrey;
+  max-width: 50%;
+  padding: 10px;
+}
+
+.resultCityName{
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+
+#searchBox {
+  margin: 4px;
+}
+
+#getWeather {
+  margin: 4px;
+}
