@@ -30,7 +30,7 @@ export default function App() {
   return (
     <div>
       <h3>ToDo-List</h3>
-      <NewItem createTodo={create}/>
+      <NewItem createTodo = {create}/>
       <TodoList item = {todosItems} completed = {completed} deleteItem = {deleteItem}/>
     </div>
   ); // what you see on the page
