@@ -13,3 +13,4 @@ export default function Todo({ item, completed, deleteItem}) {
         </li>
     ) // adds in visible delete button and is the back end function for line through if task already completed. 
 }
+ 
