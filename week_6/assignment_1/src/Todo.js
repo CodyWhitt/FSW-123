@@ -7,7 +7,7 @@ class Todo extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            editing: true,
+            editing: false,
             newText:''
         }
     }
