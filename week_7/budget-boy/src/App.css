@@ -1,0 +1,39 @@
+html {
+    background-color: lightseagreen;
+}
+
+#appBox {
+    border: 3px solid black;
+    border-radius: 2px;
+    padding: 5px;
+    flex: content;
+    width: 95%;
+    height: 95%;
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: auto;
+}
+
+#title {
+    padding: 5px;
+    margin: auto;
+    max-width: 25%;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: chartreuse;
+}
+
+#subTitle {
+    padding: 5px;
+    font-style: oblique;
+    margin: auto;
+    max-width: 20%;
+    text-align: center;
+}
+
+.centeredParagraphs {
+    text-align: center;
+}
