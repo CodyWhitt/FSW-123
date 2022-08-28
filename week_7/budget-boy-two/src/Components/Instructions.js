@@ -1,5 +1,5 @@
 
-export default function Instructions (setFlag){
+export default function Instructions (){
 
     return (
         <div className='centeredParagraphs'>
@@ -7,7 +7,6 @@ export default function Instructions (setFlag){
             Basically what we do is account for how much you would like to save per paycheck and give you a daily spending amount. By entering your paycheck for the week ..."please split you 2 week check manually for accurate results"... 
             you will receive and average of money per-day you can spend to save that amount. 
             you can also choose not to save any and we just provide you an amount per day that would be safe from overdraft. Just click below to get started. Good luck and happy savings <br/>
-        <button onClick={() => setFlag("newUserForm")}>I'm Ready to Save!</button>
         </div>
     )
 }

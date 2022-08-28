@@ -37,3 +37,26 @@ html {
 .centeredParagraphs {
     text-align: center;
 }
+
+.button {
+margin-left: 43%;
+margin-right: 43%;
+}
+
+#newUserForm {
+    text-align: center;
+}
+
+.homeBox {
+    text-align: center;
+    border: 2px solid black;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+#singleTransaction {
+    border: 1px solid black;
+    margin: auto;
+    padding: 20px;
+}
