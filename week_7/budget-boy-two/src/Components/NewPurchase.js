@@ -4,7 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 export default function NewPurchase({addItem}) {
 
 
-    function handleSubmit(e) {
+    function handleSubmit() {
 
         let newTrans = {
             _id: uuidv4(),
@@ -20,14 +20,14 @@ export default function NewPurchase({addItem}) {
 
 
     return (
-        <div>
+        <form onSubmit={handleSubmit}>
             Enter New Transactions here: <br/>
             <input type='date' id='date'></input> <br/>
             $<input type="number" placeholder="00.00" id='dollars'></input> <br/>
             <input placeholder="Where from?" id='location'></input> <br/>
             <input placeholder="Description" id='description'></input> <br/>
-            <button onClick={() => handleSubmit()}>Submit</button>
-        </div>
+            <button>Submit</button>
+        </form>
     )
 
 }
